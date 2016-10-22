@@ -101,6 +101,7 @@ html {
   top: 300px;
   right: 225px;
   transform: scale(1.25);
+  -webkit-animation-delay: 0.2s;
 }
 @-webkit-keyframes bell {
   0%    { background-position: 0 100%; }
@@ -123,18 +124,50 @@ html {
   right: 80px;
   top: 161px;
   transform: scale(2.3);
+  -webkit-animation-delay: 0.2s;
 }
 .toaster3 {
   left: 58px;
   top: 390px;
   transform: scale(3.6);
+  -webkit-animation-delay: 0.4s;
 }
 .toaster4 {
   bottom: 121px;
   right: 220px;
   transform: scale(4.5);
+  -webkit-animation-delay: 0.1s;
 }
 @-webkit-keyframes toaster {
   0%    { background-position: 0 100%; }
   100%  { background-position: -405px 100%; }
+}
+
+.clock {
+  background-image: url('images/clock.svg');
+  background-size: auto 100%;
+  width: 55px;
+  height: 60px;
+  -webkit-animation: clock 0.2s steps(4) infinite;
+}
+@-webkit-keyframes clock {
+  0%    { background-position: 0 100%; }
+  100%  { background-position: -236px 100%; }
+}
+.clock1 {
+  top: 108px;
+  left: 43px;
+  transform: scale(1.25);
+}
+.clock2 {
+  bottom: 155px;
+  left: 282px;
+  transform: scale(1.4);
+  -webkit-animation-delay: 0.2s;
+}
+.clock3 {
+  right: 40px;
+  bottom: 118px;
+  transform: scale(1.4);
+  -webkit-animation-delay: 0.1s;
 }
