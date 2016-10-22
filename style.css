@@ -1,40 +1,108 @@
+html {
+  background: #9ccff7;
+}
+.wrapper {
+  /*background-image: url('images/original-bg.jpg');*/
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  width: 960px;
+  height: 662px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  display: block;
+  width: 720px;
+  height: 70px;
+  text-indent: -9999px;
+  background-image: url('images/title.svg');
+  background-size: 100% auto;
+  position: absolute;
+  left: 130px;
+  top: 24px;
+  margin: 0;
+  padding: 0;
+}
+
 .animation {
   display: block;
   background-repeat: no-repeat;
+  position: absolute;
 }
 
 .inch-worm {
   background-image: url('images/inch-worm.svg');
-  background-size: 78px 434px;
-  width: 78px;
-  height: 34px;
+  background-size: 100% auto;
+  width: 129px;
+  height: 60px;
   -webkit-animation: inch_worm 0.65s steps(11) infinite;
+}
+.worm1 {
+  -webkit-animation-delay: 0s;
+  left: 0;
+  top: 217px;
+}
+.worm2 {
+  -webkit-animation-delay: 0.2s;
+  top: 202px;
+  right: 191px;
+}
+.worm3 {
+  -webkit-animation-delay: 0.4s;
+  left: 2px;
+  bottom: 16px;
+}
+.worm4 {
+  -webkit-animation-delay: 0.3s;
+  bottom: 16px;
+  left: 210px;
 }
 @-webkit-keyframes inch_worm {
   0%    { background-position: 100% 0; }
-  100%  { background-position: 100% -440px; }
+  100%  { background-position: 100% -727px; }
 }
 
 .mouth {
   background-image: url('images/mouth.svg');
-  background-size: 1113px 117px;
-  width: 105px;
-  height: 117px;
+  background-size: 1685px auto;
+  width: 164px;
+  height: 175px;
   -webkit-animation: mouth 0.65s steps(9) infinite;
+}
+.mouth1 {
+  top: 275px;
+  left: 139px;
+}
+.mouth2 {
+  top: 262px;
+  right: 10px;
+  -webkit-animation-delay: 0.2s;
 }
 @-webkit-keyframes mouth {
   0%    { background-position: 0 100%; }
-  100%  { background-position: -1134px 100%; }
+  100%  { background-position: -1716px 100%; }
 }
 
 .bell {
   background-image: url('images/bell.svg');
-  background-size: 216px 62px;
-  width: 46px;
-  height: 62px;
+  background-size: auto 100%;
+  width: 76px;
+  height: 112px;
   -webkit-animation: bell 0.25s steps(4) infinite;
+}
+.bell1 {
+  bottom: 65px;
+  left: 98px;
+}
+.bell2 {
+  top: 300px;
+  right: 225px;
+  transform: scale(1.25);
 }
 @-webkit-keyframes bell {
   0%    { background-position: 0 100%; }
-  100%  { background-position: -222px 100%; }
+  100%  { background-position: -406px 100%; }
 }
