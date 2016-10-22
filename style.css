@@ -26,3 +26,15 @@
   0%    { background-position: 0 100%; }
   100%  { background-position: -1134px 100%; }
 }
+
+.bell {
+  background-image: url('images/bell.svg');
+  background-size: 216px 62px;
+  width: 46px;
+  height: 62px;
+  -webkit-animation: bell 0.25s steps(4) infinite;
+}
+@-webkit-keyframes bell {
+  0%    { background-position: 0 100%; }
+  100%  { background-position: -222px 100%; }
+}
