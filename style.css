@@ -2,7 +2,7 @@ html {
   background: #9ccff7;
 }
 .wrapper {
-  background-image: url('images/original-bg.jpg');
+  /*background-image: url('images/original-bg.jpg');*/
   background-size: 100% auto;
   background-repeat: no-repeat;
   width: 960px;
