@@ -2,7 +2,7 @@ html {
   background: #9ccff7;
 }
 .wrapper {
-  /*background-image: url('images/original-bg.jpg');*/
+  background-image: url('images/original-bg.jpg');
   background-size: 100% auto;
   background-repeat: no-repeat;
   width: 960px;
@@ -105,4 +105,36 @@ html {
 @-webkit-keyframes bell {
   0%    { background-position: 0 100%; }
   100%  { background-position: -406px 100%; }
+}
+
+.toaster {
+  background-image: url('images/toaster.svg');
+  background-size: auto 100%;
+  width: 46px;
+  height: 40px;
+  -webkit-animation: toaster 0.4s steps(8) infinite;
+}
+.toaster1 {
+  top: 202px;
+  left: 200px;
+  transform: scale(2.2);
+}
+.toaster2 {
+  right: 80px;
+  top: 161px;
+  transform: scale(2.3);
+}
+.toaster3 {
+  left: 58px;
+  top: 390px;
+  transform: scale(3.6);
+}
+.toaster4 {
+  bottom: 121px;
+  right: 220px;
+  transform: scale(4.5);
+}
+@-webkit-keyframes toaster {
+  0%    { background-position: 0 100%; }
+  100%  { background-position: -405px 100%; }
 }
