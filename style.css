@@ -1,0 +1,14 @@
+.inch-worm {
+  display: block;
+  background-image: url('images/inch-worm.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 78px;
+  height: 34px;
+  -webkit-animation: inch_worm 0.65s steps(11) infinite;
+}
+
+@-webkit-keyframes inch_worm {
+  0%    { background-position: 100% 0; }
+  100%  { background-position: 100% -440px; }
+}
