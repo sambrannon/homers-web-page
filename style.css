@@ -1,14 +1,28 @@
-.inch-worm {
+.animation {
   display: block;
-  background-image: url('images/inch-worm.svg');
   background-repeat: no-repeat;
-  background-size: 100%;
+}
+
+.inch-worm {
+  background-image: url('images/inch-worm.svg');
+  background-size: 78px 434px;
   width: 78px;
   height: 34px;
   -webkit-animation: inch_worm 0.65s steps(11) infinite;
 }
-
 @-webkit-keyframes inch_worm {
   0%    { background-position: 100% 0; }
   100%  { background-position: 100% -440px; }
+}
+
+.mouth {
+  background-image: url('images/mouth.svg');
+  background-size: 1113px 117px;
+  width: 105px;
+  height: 117px;
+  -webkit-animation: mouth 0.65s steps(9) infinite;
+}
+@-webkit-keyframes mouth {
+  0%    { background-position: 0 100%; }
+  100%  { background-position: -1134px 100%; }
 }
